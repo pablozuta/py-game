@@ -15,6 +15,8 @@ reloj = pygame.time.Clock()
 typography = pygame.font.Font('font/Pixeltype.ttf', 60)
 
 gameActive = True
+musicaDeFondo = pygame.mixer.Sound('audio/music.wav')
+musicaDeFondo.play(loops = -1)
 
 
 #------------------------------variables------------------------------------
@@ -33,7 +35,7 @@ protagonista = pygame.image.load('graphics/player/player_walk_1.png').convert_al
 protagonistaRectangle = protagonista.get_rect(midbottom = (80, 300))
 protagonistaGravity = 0
 
- 
+#aca empieza el loop del juego
 while True:
 
     # codigo para salir del juego si presionamos la tecla x
