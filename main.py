@@ -8,7 +8,7 @@ from sys import exit
 pygame.init()
 
 #------------------------------metadatos------------------------------------
-
+# ponemos el tamaño de la ventana en 800x400 px
 pantalla = pygame.display.set_mode((800, 400))
 pygame.display.set_caption('High Tech - Low Life')
 reloj = pygame.time.Clock()
